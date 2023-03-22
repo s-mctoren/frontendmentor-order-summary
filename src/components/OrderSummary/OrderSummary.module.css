@@ -1,0 +1,114 @@
+.myCard {
+  background-color: white;
+  border-radius: 20px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero {
+  border-radius: 20px 20px 0 0;
+}
+
+.cardContent {
+  padding: 0 1.5em;
+  margin: 1.5em;
+}
+
+.description h1 {
+  color: var(--dark-blue);
+  font-weight: 900;
+  margin: 0.5em;
+}
+
+.description p {
+  color: var(--desaturated-blue);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.6em;
+}
+
+.miniCard,
+.miniCardDetail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.miniCard {
+  background-color: var(--very-pale-blue);
+  border-radius: 10px;
+  padding: 1.2em 1.5em;
+  margin-bottom: 1.75em;
+  justify-content: space-between;
+
+  line-height: 0.5em;
+}
+
+.miniCardDetail img {
+  margin-right: 1em;
+}
+
+.itemName {
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+
+.itemPrice {
+  color: var(--desaturated-blue);
+  font-weight: 700;
+}
+
+.changeItem:link,
+.changeItem:visited {
+  color: var(--bright-blue);
+  font-weight: 700;
+}
+
+.changeItem:hover,
+.changeItem:active {
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+.submition {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.proceedBtn:link,
+.proceedBtn:visited {
+  background-color: var(--bright-blue);
+  border-radius: 10px;
+  border-style: hidden;
+  padding: 1em;
+  margin-bottom: 1.75em;
+
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+
+  box-shadow: 0 25px 20px hsla(245, 75%, 52%, 0.15);
+}
+
+.proceedBtn:hover,
+.proceedBtn:active {
+  opacity: 0.75;
+}
+
+.cancelOrder:link,
+.cancelOrder:visited {
+  color: var(--desaturated-blue);
+  font-weight: 900;
+  text-decoration: none;
+
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.cancelOrder:hover,
+.cancelOrder:active {
+  color: var(--dark-blue);
+}
