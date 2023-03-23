@@ -1,32 +1,47 @@
 .myCard {
   background-color: white;
-  border-radius: 20px;
-  width: 500px;
+  border-radius: var(--card-border-radius);
   display: flex;
   flex-direction: column;
   text-align: center;
+
+  max-width: 85%;
 }
 
 .hero {
-  border-radius: 20px 20px 0 0;
+  border-radius: var(--card-border-radius) var(--card-border-radius) 0 0;
 }
 
 .cardContent {
-  padding: 0 1.5em;
-  margin: 1.5em;
+  margin: 1.75rem 1.5rem;
 }
 
 .description h1 {
   color: var(--dark-blue);
+  font-size: 1.5rem;
   font-weight: 900;
-  margin: 0.5em;
+
+  margin: 0 0 0.67rem 0;
 }
 
 .description p {
   color: var(--desaturated-blue);
+  font-size: 1rem;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 1.6em;
+
+  line-height: 1.6rem;
+  margin: 1rem 0 1.5rem 0;
+}
+
+.miniCard {
+  background-color: var(--very-pale-blue);
+  border-radius: var(--mini-card-border-radius);
+
+  justify-content: space-between;
+  line-height: 0.5;
+
+  padding: 0.5rem 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .miniCard,
@@ -36,33 +51,26 @@
   align-items: center;
 }
 
-.miniCard {
-  background-color: var(--very-pale-blue);
-  border-radius: 10px;
-  padding: 1.2em 1.5em;
-  margin-bottom: 1.75em;
-  justify-content: space-between;
-
-  line-height: 0.5em;
-}
-
 .miniCardDetail img {
-  margin-right: 1em;
+  margin-right: 0.8rem;
 }
 
 .itemName {
   color: var(--dark-blue);
+  font-size: 0.9rem;
   font-weight: 900;
 }
 
 .itemPrice {
   color: var(--desaturated-blue);
-  font-weight: 700;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
 .changeItem:link,
 .changeItem:visited {
   color: var(--bright-blue);
+  font-size: 0.9rem;
   font-weight: 700;
 }
 
@@ -72,25 +80,24 @@
   opacity: 0.75;
 }
 
-.submition {
+.submission {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1em;
 }
 
 .proceedBtn:link,
 .proceedBtn:visited {
   background-color: var(--bright-blue);
-  border-radius: 10px;
-  border-style: hidden;
-  padding: 1em;
-  margin-bottom: 1.75em;
+  border-radius: var(--mini-card-border-radius);
 
   color: white;
   font-weight: 700;
   text-decoration: none;
 
-  box-shadow: 0 25px 20px hsla(245, 75%, 52%, 0.15);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+
+  box-shadow: 0 1.2rem 1.2rem hsla(245, 75%, 52%, 0.15);
 }
 
 .proceedBtn:hover,

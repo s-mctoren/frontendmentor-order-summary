@@ -9,6 +9,9 @@
   --very-pale-blue: hsl(225, 100%, 98%);
   --desaturated-blue: hsl(224, 23%, 55%);
   --dark-blue: hsl(223, 47%, 23%);
+
+  --card-border-radius: 1.2rem;
+  --mini-card-border-radius: calc(var(--card-border-radius) * 0.5);
 }
 
 #root {
@@ -27,11 +30,21 @@ body {
   margin: 0;
 }
 
-body {
+html {
   font-family: "Red Hat Display", sans-serif;
   font-size: 16px;
+}
 
+body {
   background-color: var(--pale-blue);
-  background-image: url("assets/pattern-background-desktop.svg");
-  background-repeat: repeat-x;
+  background-image: url("assets/pattern-background-mobile.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 450px) {
+  body {
+    background-image: url("assets/pattern-background-desktop.svg");
+    background-repeat: repeat-x;
+  }
 }

@@ -33,7 +33,7 @@ export function OrderSummary() {
           </a>
         </div>
 
-        <div className={styles.submition}>
+        <div className={styles.submission}>
           <a className={styles.proceedBtn} href="#">
             Proceed to Payment
           </a>
